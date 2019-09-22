@@ -15,7 +15,7 @@ echo '<html lang="en">
 <div id="menu">
 <ul>
 <li><a href="admin.php">Pridėti prie eilės</a></li>
-<li><a href="query.php">Eilės puslapis</a></li>
+<li><a href="query.php?limit=5">Eilės puslapis</a></li>
 <li><a href="spec_page.php">Specialisto puslapis</a></li>
 </ul>
 </div>    

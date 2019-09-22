@@ -24,7 +24,7 @@ li {
      text-transform: uppercase;
  }
  #main {
-     margin 10;
+     margin: 10;
      padding-left:100;
      color: beige;
  }
@@ -33,4 +33,7 @@ li {
  a, a:active, a:visited, a:hover {
      color: white;
      text-decoration: none;
+ }
+ p {
+     color: #00DD00;
  }
