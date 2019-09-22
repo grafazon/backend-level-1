@@ -1,0 +1,36 @@
+body{
+     background-color: slategray;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+  }
+
+li {
+    display: inline;
+    margin: 10;
+}
+
+ h1 {
+     text-align: center;
+     color: white;
+ } 
+
+ #menu {
+     text-align: center;
+     text-transform: uppercase;
+ }
+ #main {
+     margin 10;
+     padding-left:100;
+     color: beige;
+ }
+
+
+ a, a:active, a:visited, a:hover {
+     color: white;
+     text-decoration: none;
+ }
