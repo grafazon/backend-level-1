@@ -5,7 +5,7 @@ $conn = new mysqli($config['DB_HOST'], $config['DB_USERNAME'], $config['DB_PASSW
 
 // Prisijungimo prie duombazes tikrinimas
 if ($conn->connect_error) {
-    die('Connection failed: ' . $conn->connect_error);
+    die('Klaida(CONNECTION): ' . $conn->connect_error);
 }
 
 ?>

@@ -7,9 +7,9 @@ echo 'Rodyti:
 <a href = "query.php?limit=5">Paskutiniu 5</a><br />
 ';
 if ($_GET["limit"] == 5) {
-    $sql = 'SELECT * FROM users LIMIT 5';
+    $sql = 'SELECT * FROM users WHERE reserved=0 LIMIT 5';
 } else {
-    $sql = 'SELECT * FROM users ORDER BY id';
+    $sql = 'SELECT * FROM users WHERE reserved=0 ORDER BY id';
 }
 
 $result = $conn->query($sql);

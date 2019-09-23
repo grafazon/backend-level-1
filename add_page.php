@@ -10,9 +10,9 @@
         $surname = $_POST["surname"];
         $sql = "INSERT INTO users (name, surname) VALUES ('$name', '$surname')";
         if (mysqli_query($conn, $sql)) {
-            echo '<script>location.href="admin.php?success=1";</script>';
+            echo '<script>location.href="query.php?limit=5";</script>';
         } else {
-            echo 'Error: ' . $sql . '<br>' . mysqli_error($conn);
+            echo 'Klaida(INSERT): ' . $sql . '<br>' . mysqli_error($conn);
         } 
     }
 

@@ -3,9 +3,7 @@ include 'db.php';
 include_once 'header.php';
 //Klientu registravimo formos
 echo '<h2>Naujo kliento registravimo forma</h2>';
-if ($_GET["success"] == 1){
-    echo '<h3><font color="#00DD00">Užregistruota sėkmingai</font></h3>';
-}
+//Kliento registracjos standartine forma
 //Pranesimas del neivesto vardo
 if ($_GET["error"] == 1){
     echo '
@@ -14,10 +12,11 @@ if ($_GET["error"] == 1){
         <input name="name" type="text" value="" /> <br /> 
         <label for="surname">Pavarde</label><br /> 
         <input name="surname" type="text" value="'.$_GET["surname"].'" /> <br /> <br />
-        <button type="submit" value="Submit">Prideti klienta prie eiles</button>
+        <input type="hidden" name="type" value="'.$_GET["type"].'">
+        <button type="submit" value="Submit">Registracija</button>
     </form>'; 
 }
-//Kleinto registracjos standartine forma
+//Kliento registracjos standartine forma
 else {
     echo '
     <form action="add_page.php" method="POST">
@@ -25,7 +24,8 @@ else {
         <input name="name" type="text" value="" /> <br /> 
         <label for="surname">Pavarde</label><br /> 
         <input name="surname" type="text" value="" /> <br /> <br />
-        <button type="submit" value="Submit">Prideti klienta prie eiles</button>
+        <input type="hidden" name="type" value="'.$_GET["type"].'">
+        <button type="submit" value="Submit">Registracija</button>
     </form>';
 }
 
